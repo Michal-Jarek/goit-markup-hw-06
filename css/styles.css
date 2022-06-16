@@ -257,12 +257,34 @@ header .container {
   background-color: var(--main-color);
   outline: none;
 }
+.newsletter{
+  flex-grow: 1;
+  margin: 12px 0 0 72px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.newsletter h3{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.newsletter-icon{
+  width:24px;
+  height: 24px;
+}
+.newsletter button{
+  background-color:var(--main-color);
+  list-style: none;
+  border-radius: 4px;
+  border:0;
+}
+
 /* ================ Portfolio Styling =======*/
 .filter .list,
 .references-list .list {
   display: flex;
   justify-content: center;
 }
+
 
 /* Buttons styling */
 
@@ -400,6 +422,7 @@ header .container {
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-align: left;
+  text-transform: uppercase;
 }
 /* section description */
 .description {
@@ -636,3 +659,4 @@ header .container {
   height: 18px;
   margin: auto;
 }
+/* ================== FORM ===================== */
