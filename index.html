@@ -470,18 +470,93 @@
             </li>
           </ul>
         </div>
+
+        <form name="newsletter-short" class="newsletter" autocomplete="on">
+          <label class="newsletter-label">
+            <h3>Zapisz się do newslettera</h3>
+            <input type="email" name="email" placeholder="E-mail" />
+          </label>
+          <button class="buttons" type="submit">
+            Zapisz się
+            <svg class="newsletter-icon">
+              <use href="images/svg-icons/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg>
-              <use href="./images/svg-icons/icons.svg#x"></use>
+            <use href="./images/svg-icons/icons.svg#x"></use>
           </svg>
         </button>
+        <form class="long-form">
+          <field>
+            <legend>Zostaw swoje dane w formularzu poniżej</legend>
+            <label class="long-form-label">
+              Imię
+              <input
+                type="text"
+                name="long-form-name"
+                class="long-form-input"
+              />
+              <svg>
+                <use href="./images/svg-icons/icons.svg#person-black"></use>
+              </svg>
+            </label>
+            <label class="long-form-label">
+              Telefon
+              <input
+                type="tel"
+                name="long-form-phone"
+                class="long-form-input"
+              />
+              <svg>
+                <use href="./images/svg-icons/icons.svg#phone-black"></use>
+              </svg>
+            </label>
+            <label class="long-form-label">
+              Email
+              <input
+                type="email"
+                name="long-form-email"
+                class="long-form-input"
+              />
+              <svg>
+                <use href="./images/svg-icons/icons.svg#email-black"></use>
+              </svg>
+            </label>
+            <label class="long-form-label">
+              Komentarz
+              <textarea
+                name="long-form-comment"
+                class="long-form-input"
+                rows="10"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </label>
+          </field>
+
+          <input
+            class="long-form-checkbox visually-hidden"
+            id="user-policy"
+            type="checkbox"
+            name="needed-agree"
+            value="agree"
+            required
+          />
+          <label for="user-policy" class="long-form-label-agree">
+            Oświadczam iż akceptuję
+            <a class="form-term-links" href="#">Regulamin</a> i
+            <a class="form-term-links" href="#">Politykę Prywatności.</a>
+          </label>
+          <button class="long-form-button" type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
-    
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
